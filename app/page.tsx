@@ -4,6 +4,7 @@ import OurServices from "@/components/OurServices";
 import ProcessSteps from "@/components/ProcessSteps";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import RecentWork from "@/components/RecentWork";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ProcessSteps />
       <WhyChooseUs />
       <RecentWork />
+      <FAQ />
     </div>
   );
 }
