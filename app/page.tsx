@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import WhoWeAre from "@/components/WhoWeAre";
+import StatsCards from "@/components/StatsCards";
 import OurServices from "@/components/OurServices";
 import ProcessSteps from "@/components/ProcessSteps";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <Hero />
       <WhoWeAre />
+      <StatsCards />
       <OurServices />
       <ProcessSteps />
       <WhyChooseUs />
