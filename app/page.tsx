@@ -3,6 +3,7 @@ import WhoWeAre from "@/components/WhoWeAre";
 import OurServices from "@/components/OurServices";
 import ProcessSteps from "@/components/ProcessSteps";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import RecentWork from "@/components/RecentWork";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <OurServices />
       <ProcessSteps />
       <WhyChooseUs />
+      <RecentWork />
     </div>
   );
 }

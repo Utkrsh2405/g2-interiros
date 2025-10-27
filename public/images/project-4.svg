@@ -1,0 +1,14 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f5f5f5"/>
+  <!-- Minimalist sofa -->
+  <rect x="150" y="220" width="300" height="100" rx="5" fill="#7a8a7a"/>
+  <rect x="160" y="190" width="70" height="40" rx="3" fill="#8a9a8a"/>
+  <rect x="265" y="190" width="70" height="40" rx="3" fill="#8a9a8a"/>
+  <rect x="370" y="190" width="70" height="40" rx="3" fill="#8a9a8a"/>
+  <!-- Coffee table -->
+  <rect x="250" y="280" width="100" height="50" rx="3" fill="#a08060"/>
+  <circle cx="300" cy="305" r="8" fill="#8b6f47"/>
+  <!-- Plant -->
+  <ellipse cx="500" cy="250" rx="25" ry="50" fill="#4a6b4a"/>
+  <rect x="495" y="250" width="10" height="70" fill="#6b5d4f"/>
+</svg>
