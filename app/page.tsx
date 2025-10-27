@@ -5,6 +5,7 @@ import ProcessSteps from "@/components/ProcessSteps";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import RecentWork from "@/components/RecentWork";
 import FAQ from "@/components/FAQ";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChooseUs />
       <RecentWork />
       <FAQ />
+      <CTA />
     </div>
   );
 }
