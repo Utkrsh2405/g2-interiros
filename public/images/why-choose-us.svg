@@ -1,0 +1,53 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8b5a8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9d9a8d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#787568;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Wall shelves effect -->
+  <rect x="900" y="100" width="200" height="20" fill="#5a6b5a" opacity="0.6"/>
+  <rect x="900" y="150" width="200" height="20" fill="#5a6b5a" opacity="0.6"/>
+  <rect x="900" y="200" width="200" height="20" fill="#5a6b5a" opacity="0.6"/>
+  
+  <!-- Window/curtain effect -->
+  <rect x="50" y="80" width="150" height="300" fill="#f5f5f0" opacity="0.4"/>
+  <rect x="60" y="80" width="60" height="300" fill="#e8e8e0" opacity="0.3"/>
+  
+  <!-- Pendant lights -->
+  <circle cx="400" cy="120" r="30" fill="#d4a85f" opacity="0.7"/>
+  <rect x="395" y="80" width="10" height="40" fill="#8b7355"/>
+  <circle cx="500" cy="140" r="35" fill="#d4a85f" opacity="0.7"/>
+  <rect x="495" y="90" width="10" height="50" fill="#8b7355"/>
+  
+  <!-- Sofa representation -->
+  <rect x="150" y="450" width="300" height="120" rx="10" fill="#6b7d6b" opacity="0.8"/>
+  <rect x="160" y="420" width="70" height="50" rx="5" fill="#8a9a8a" opacity="0.7"/>
+  <rect x="250" y="420" width="70" height="50" rx="5" fill="#8a9a8a" opacity="0.7"/>
+  <rect x="340" y="420" width="70" height="50" rx="5" fill="#8a9a8a" opacity="0.7"/>
+  
+  <!-- Coffee table -->
+  <ellipse cx="550" cy="550" rx="120" ry="80" fill="#c8a882" opacity="0.6"/>
+  <rect x="540" y="530" width="20" height="80" fill="#8b7355" opacity="0.5"/>
+  
+  <!-- Wooden furniture -->
+  <rect x="700" y="400" width="180" height="200" rx="5" fill="#a0724a" opacity="0.7"/>
+  <rect x="710" y="410" width="160" height="20" fill="#8b6239" opacity="0.6"/>
+  
+  <!-- Plant -->
+  <ellipse cx="950" cy="520" rx="40" ry="60" fill="#5a6b4a" opacity="0.7"/>
+  <rect x="945" y="520" width="10" height="80" fill="#6b5d4f"/>
+  
+  <!-- Decorative rug pattern -->
+  <rect x="250" y="600" width="500" height="150" fill="#9d7a5a" opacity="0.4"/>
+  
+  <!-- Text overlay -->
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" opacity="0.3">
+    Interior Design Showcase
+  </text>
+</svg>
