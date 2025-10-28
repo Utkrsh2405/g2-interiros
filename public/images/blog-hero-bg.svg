@@ -1,0 +1,19 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blogHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4a3828;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a1a0a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#blogHeroGrad)"/>
+  <!-- Vertical wood planks -->
+  <rect x="0" y="0" width="120" height="1080" fill="#3a2a1a" opacity="0.4"/>
+  <rect x="240" y="0" width="120" height="1080" fill="#4a3828" opacity="0.3"/>
+  <rect x="480" y="0" width="120" height="1080" fill="#3a2a1a" opacity="0.4"/>
+  <rect x="720" y="0" width="120" height="1080" fill="#4a3828" opacity="0.3"/>
+  <rect x="960" y="0" width="120" height="1080" fill="#3a2a1a" opacity="0.4"/>
+  <rect x="1200" y="0" width="120" height="1080" fill="#4a3828" opacity="0.3"/>
+  <rect x="1440" y="0" width="120" height="1080" fill="#3a2a1a" opacity="0.4"/>
+  <rect x="1680" y="0" width="120" height="1080" fill="#4a3828" opacity="0.3"/>
+</svg>
