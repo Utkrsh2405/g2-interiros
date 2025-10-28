@@ -1,0 +1,17 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#e8e8dc"/>
+  <!-- Outdoor/patio structure -->
+  <rect x="100" y="80" width="600" height="400" fill="#d4c4a8" opacity="0.6"/>
+  <!-- Stone/brick pattern -->
+  <rect x="120" y="100" width="80" height="60" fill="#9d8a6a" opacity="0.8"/>
+  <rect x="210" y="100" width="80" height="60" fill="#9d8a6a" opacity="0.7"/>
+  <rect x="300" y="100" width="80" height="60" fill="#9d8a6a" opacity="0.8"/>
+  <rect x="120" y="170" width="80" height="60" fill="#9d8a6a" opacity="0.7"/>
+  <rect x="210" y="170" width="80" height="60" fill="#9d8a6a" opacity="0.8"/>
+  <!-- Plants/greenery -->
+  <ellipse cx="550" cy="300" rx="50" ry="100" fill="#4a6b4a"/>
+  <ellipse cx="650" cy="320" rx="40" ry="80" fill="#3a5a3a"/>
+  <!-- Furniture suggestion -->
+  <rect x="200" y="350" width="150" height="100" rx="5" fill="#8a7a6a"/>
+  <rect x="380" y="350" width="150" height="100" rx="5" fill="#8a7a6a"/>
+</svg>
