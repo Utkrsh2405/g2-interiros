@@ -20,7 +20,7 @@ const BlogGrid = () => {
       category: 'Interior Design',
       date: 'Oct 15, 2025',
       author: 'Sarah Johnson',
-      image: '/images/blog-1.svg',
+      image: '/images/blog-2.jpg',
       excerpt: 'Discover the latest trends in modern interior design and how to apply them to your home.',
     },
     {
@@ -29,7 +29,7 @@ const BlogGrid = () => {
       category: 'Minimalism',
       date: 'Oct 12, 2025',
       author: 'Michael Chen',
-      image: '/images/blog-2.svg',
+      image: '/images/blog-3.jpg',
       excerpt: 'Learn how less can be more when it comes to creating peaceful, functional living spaces.',
     },
     {
@@ -38,7 +38,7 @@ const BlogGrid = () => {
       category: 'Sustainability',
       date: 'Oct 10, 2025',
       author: 'Emma Wilson',
-      image: '/images/blog-3.svg',
+      image: '/images/blog-4.jpg',
       excerpt: 'Explore environmentally conscious design choices that don\'t compromise on style.',
     },
     {
@@ -47,7 +47,7 @@ const BlogGrid = () => {
       category: 'Seasonal Design',
       date: 'Oct 8, 2025',
       author: 'David Martinez',
-      image: '/images/blog-4.svg',
+      image: '/images/blog-5.jpg',
       excerpt: 'Make your home warm and inviting with these winter-inspired design ideas.',
     },
     {
@@ -56,7 +56,7 @@ const BlogGrid = () => {
       category: 'Technology',
       date: 'Oct 5, 2025',
       author: 'Lisa Anderson',
-      image: '/images/blog-5.svg',
+      image: '/images/blog-6.jpg',
       excerpt: 'Seamlessly blend technology with aesthetics for a truly modern home experience.',
     },
     {
@@ -65,7 +65,7 @@ const BlogGrid = () => {
       category: 'Color Theory',
       date: 'Oct 3, 2025',
       author: 'James Taylor',
-      image: '/images/blog-6.svg',
+      image: '/images/blog-7.jpg',
       excerpt: 'Understand how colors affect mood and create the perfect atmosphere in your space.',
     },
     {
@@ -74,7 +74,7 @@ const BlogGrid = () => {
       category: 'Space Planning',
       date: 'Oct 1, 2025',
       author: 'Rachel Green',
-      image: '/images/blog-7.svg',
+      image: '/images/blog-8.jpg',
       excerpt: 'Clever design strategies to make the most of compact living areas.',
     },
     {
@@ -83,7 +83,7 @@ const BlogGrid = () => {
       category: 'Budget Design',
       date: 'Sep 28, 2025',
       author: 'Tom Harris',
-      image: '/images/blog-8.svg',
+      image: '/images/blog-9.jpg',
       excerpt: 'Achieve high-end looks without breaking the bank with these expert tips.',
     },
     {
@@ -92,7 +92,7 @@ const BlogGrid = () => {
       category: 'Vintage Style',
       date: 'Sep 25, 2025',
       author: 'Sophie Brown',
-      image: '/images/blog-9.svg',
+      image: '/images/blog-10.jpg',
       excerpt: 'How to incorporate vintage elements into contemporary interiors successfully.',
     },
   ];
@@ -105,7 +105,7 @@ const BlogGrid = () => {
           {blogPosts.map((post) => (
             <article
               key={post.id}
-              className="bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300 group"
+              className="bg-white overflow-hidden rounded-md hover:shadow-lg transition-shadow duration-300 group border border-[#E8E8EA]"
             >
               {/* Image */}
               <Link href={`/blog/${post.id}`} className="block relative h-[250px] overflow-hidden">
@@ -113,7 +113,7 @@ const BlogGrid = () => {
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover p-4 rounded-md group-hover:scale-102 transition-transform duration-300"
                 />
               </Link>
 

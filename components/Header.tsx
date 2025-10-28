@@ -10,9 +10,10 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Blog', path: '/blog' },
+    // { name: 'Projects', path: '/projects' },
+    { name: 'Blogs', path: '/blog' },
+    { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -24,26 +25,27 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-serif font-bold text-gray-900">
-              G2 Interiors
-            </span>
+            <img src="/images/G2logo.png" alt="Logo" width="60" height="52" />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className='hidden md:flex items-center justify-center gap-12'>
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive(link.path)
-                    ? 'text-gray-900 border-b-2 border-gray-900 pb-1'
+                className={`text-sm font-medium transition-colors duration-200 ${isActive(link.path)
+                    ? 'text-gray-900 border-b-2 border-gray-900 '
                     : 'text-gray-600 hover:text-gray-900'
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
             ))}
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+
             <Link
               href="/contact"
               className="bg-gray-900 text-white px-6 py-2 hover:bg-gray-800 transition-colors duration-300"
@@ -91,11 +93,10 @@ const Header = () => {
                 <Link
                   key={link.path}
                   href={link.path}
-                  className={`text-sm font-medium transition-colors duration-200 py-2 ${
-                    isActive(link.path)
+                  className={`text-sm font-medium transition-colors duration-200 py-2 ${isActive(link.path)
                       ? 'text-gray-900 font-semibold'
                       : 'text-gray-600 hover:text-gray-900'
-                  }`}
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}

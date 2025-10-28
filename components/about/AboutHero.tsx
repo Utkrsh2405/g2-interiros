@@ -3,15 +3,13 @@ import Link from 'next/link';
 
 const AboutHero = () => {
   return (
-    <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center bg-gray-900">
-      {/* Background Image Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/about-hero-bg.svg')",
-          opacity: 0.4
-        }}
-      />
+   
+       <section
+      className="relative h-[60vh] md:h-[100vh] bg-cover bg-top flex items-center justify-center"
+      style={{ backgroundImage: "url('/images/banner.jpg')" }}
+    >
+            {/* <div className="absolute inset-0 bg-black/40"></div> */}
+
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">

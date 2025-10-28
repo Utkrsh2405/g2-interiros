@@ -2,21 +2,18 @@ import React from 'react';
 
 const ServicesHero = () => {
   const stats = [
-    { value: '5+', label: 'Years' },
-    { value: '100+', label: 'Projects' },
-    { value: '50+', label: 'Clients' },
+    { value: '6', label: 'Core Services' },
+    { value: '15+', label: 'Years Experience' },
+    { value: '500+', label: 'Projects Completed' },
   ];
 
   return (
-    <section className="relative py-20 md:py-32 bg-gray-900">
-      {/* Background Image Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/services-hero-bg.svg')",
-          opacity: 0.3
-        }}
-      />
+    <section
+      className="relative h-screen w-full bg-cover bg-top flex items-center justify-center"
+      style={{ backgroundImage: "url('/images/banner.jpg')" }}
+    >
+
+       {/* <div className="absolute inset-0 bg-black/40"></div> */}
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
@@ -38,7 +35,7 @@ const ServicesHero = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 text-center hover:bg-white/20 transition-colors duration-300"
+                className=" border-2 border-l-white/20 border-t-0 border-b-0 border-r-0 p-6 text-center  transition-colors duration-300"
               >
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
                   {stat.value}

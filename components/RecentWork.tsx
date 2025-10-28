@@ -6,31 +6,31 @@ const RecentWork = () => {
   const projects = [
     {
       id: 1,
-      image: '/images/project-1.svg',
+      image: '/images/work-1.jpg',
       title: 'Modern Living Space',
       span: 'col-span-1 row-span-1',
     },
     {
       id: 2,
-      image: '/images/project-2.svg',
+      image: '/images/work-2.jpg',
       title: 'Elegant Interior',
       span: 'col-span-1 row-span-1',
     },
     {
       id: 3,
-      image: '/images/project-3.svg',
+      image: '/images/work-3.jpg',
       title: 'Cozy Living Room',
       span: 'col-span-1 row-span-1',
     },
     {
       id: 4,
-      image: '/images/project-4.svg',
+      image: '/images/work-4.jpg',
       title: 'Minimalist Design',
       span: 'col-span-1 row-span-1',
     },
     {
       id: 5,
-      image: '/images/project-5.svg',
+      image: '/images/work-5.jpg',
       title: 'Contemporary Space',
       span: 'col-span-1 row-span-1',
     },

@@ -22,13 +22,13 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <section className="py-16 md:py-24 ">
+      <div className="container mx-auto px-24 ">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Image with overlay text */}
-          <div className="relative h-[400px] md:h-[500px] lg:h-[600px] group overflow-hidden">
+          <div className="relative h-[400px] md:h-[500px] lg:h-[500px] group overflow-hidden">
             <Image
-              src="/images/placeholder.svg"
+              src="/images/section-home-1.jpg"
               alt="Modern interior design living room"
               fill
               className="object-cover"
@@ -53,7 +53,7 @@ const WhoWeAre = () => {
           </div>
 
           {/* Right side - Stats Grid */}
-          <div className="space-y-6">
+          <div className="absolute -left-32 lg:relative mt-12 lg:mt-0 bg-[#F8F8F8] p-8 md:p-12 shadow-lg">
             {/* Top description */}
             <div className="mb-8">
               <p className="text-gray-600 leading-relaxed">
@@ -66,10 +66,10 @@ const WhoWeAre = () => {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="border-l-4 border-amber-600 pl-4 py-2"
+                  className="pl-4 py-2"
                 >
-                  <p className="text-sm text-gray-600 mb-2">{stat.label}</p>
-                  <p className="text-3xl md:text-4xl font-bold text-gray-900">
+                  <p className="text-sm text-gray-600 mb-6">{stat.label}</p>
+                  <p className="text-3xl md:text-4xl font-semibold text-gray-900">
                     {stat.value}
                   </p>
                 </div>

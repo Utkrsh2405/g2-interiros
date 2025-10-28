@@ -2,16 +2,12 @@ import React from 'react';
 
 const BlogHero = () => {
   return (
-    <section className="relative py-20 md:py-32 bg-gray-900">
-      {/* Background Image Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/blog-hero-bg.svg')",
-          opacity: 0.3
-        }}
-      />
-      
+    <section
+      className="relative h-screen w-full bg-contain bg-top flex items-center justify-center"
+      style={{ backgroundImage: "url('/images/blog-1.jpg')" }}
+    >
+            <div className="absolute inset-0 bg-black/40"></div>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl">

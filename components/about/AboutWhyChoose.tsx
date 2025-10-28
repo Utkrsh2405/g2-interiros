@@ -52,7 +52,7 @@ const AboutWhyChoose = () => {
           {/* Right side - Image */}
           <div className="relative h-[400px] md:h-[500px] overflow-hidden order-1 lg:order-2">
             <Image
-              src="/images/about-why-choose.svg"
+              src="/images/about-2.jpg"
               alt="Modern living room interior design"
               fill
               className="object-cover"

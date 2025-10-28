@@ -17,7 +17,7 @@ export default function ServicesPage() {
         'Lighting design and fixtures',
         'Complete project management',
       ],
-      image: '/images/service-residential.svg',
+      image: '/images/service-7.jpg',
       imagePosition: 'left' as const,
     },
     {
@@ -31,7 +31,7 @@ export default function ServicesPage() {
         'Sustainable and eco-friendly solutions',
         'Budget-conscious planning',
       ],
-      image: '/images/service-renovation.svg',
+      image: '/images/service-6.jpg',
       imagePosition: 'right' as const,
     },
     {
@@ -45,7 +45,7 @@ export default function ServicesPage() {
         'Ergonomic workspace layouts',
         'Turnkey project delivery',
       ],
-      image: '/images/service-residential.svg',
+      image: '/images/service-7.jpg',
       imagePosition: 'left' as const,
     },
     {
@@ -59,7 +59,7 @@ export default function ServicesPage() {
         'Lighting and irrigation systems',
         'Seasonal maintenance planning',
       ],
-      image: '/images/service-renovation.svg',
+      image: '/images/service-6.jpg',
       imagePosition: 'right' as const,
     },
   ];

@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
           {/* Left side - Video/Image with play button */}
           <div className="relative h-[400px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <Image
-              src="/images/why-choose-us.svg"
+              src="/images/service 4.jpg"
               alt="Interior design showcase video"
               fill
               className="object-cover"
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
                   .filter((f) => f.column === 1)
                   .map((feature, index) => (
                     <div key={`col1-${index}`} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center">
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#757575] flex items-center justify-center">
                         <svg
                           className="w-3 h-3 text-white"
                           fill="none"
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
                   .filter((f) => f.column === 2)
                   .map((feature, index) => (
                     <div key={`col2-${index}`} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center">
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#757575] flex items-center justify-center">
                         <svg
                           className="w-3 h-3 text-white"
                           fill="none"

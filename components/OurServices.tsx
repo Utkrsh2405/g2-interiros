@@ -8,19 +8,19 @@ const OurServices = () => {
       id: 1,
       title: 'Lorem Ipsum',
       description: 'Et tincidunt ut vitae nulla sed lobortis.',
-      image: '/images/service-1.svg',
+      image: '/images/service 1.jpg',
     },
     {
       id: 2,
       title: 'Lorem Ipsum',
       description: 'Et tincidunt ut vitae nulla sed lobortis.',
-      image: '/images/service-2.svg',
+      image: '/images/service 2.jpg',
     },
     {
       id: 3,
       title: 'Lorem Ipsum',
       description: 'Et tincidunt ut vitae nulla sed lobortis long.',
-      image: '/images/service-3.svg',
+      image: '/images/service 3.jpg',
     },
   ];
 
@@ -58,7 +58,7 @@ const OurServices = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group cursor-pointer"
+              className="group cursor-pointer bg-[#F8F8F8] p-4"
             >
               {/* Image Container */}
               <div className="relative h-[280px] mb-4 overflow-hidden">

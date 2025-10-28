@@ -10,7 +10,7 @@ const AboutIntro = () => {
           {/* Left side - Image */}
           <div className="relative h-[400px] md:h-[500px] overflow-hidden">
             <Image
-              src="/images/about-intro.svg"
+              src="/images/about-1.jpg"
               alt="Modern interior design bedroom"
               fill
               className="object-cover"

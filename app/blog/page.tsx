@@ -8,6 +8,7 @@ export default function BlogPage() {
     <div>
       <BlogHero />
       <BlogGrid />
+      <img src="/images/blog-11.jpg" alt="image" width="100%" className='md:h-[100vh]'/>
       <CTA />
     </div>
   );
