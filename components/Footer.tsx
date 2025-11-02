@@ -60,39 +60,39 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#FFF9EE] text-white">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-4">G2 Interiors</h3>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <img src="/images/logo.svg" alt="" />
+            {/* <p className="text-black mb-6 leading-relaxed">
               Transforming spaces and inspiring lives through innovative interior
               design solutions.
-            </p>
-            <div className="flex gap-4">
+            </p> */}
+            {/* <div className="flex gap-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.url}
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  className="text-black transition-colors duration-300"
                   aria-label={social.name}
                 >
                   {social.icon}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     href={link.path}
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                    className="text-gray-400 hover:text-black transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
@@ -103,11 +103,11 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">Our Services</h4>
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-gray-400">{service}</span>
+                  <span className="text-gray-400 hover:text-black transition-colors duration-300 cursor-pointer">{service}</span>
                 </li>
               ))}
             </ul>
@@ -115,7 +115,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <svg
@@ -190,22 +190,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+        <div className="pt-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+            <p className="text-black text-sm ">
               © {currentYear} G2 Interiors. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                Sitemap
-              </Link>
-            </div>
+           
           </div>
         </div>
       </div>

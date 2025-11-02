@@ -13,8 +13,8 @@ const WhyChooseUs = () => {
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-center">
           {/* Left side - Video/Image with play button */}
           <div className="relative h-[400px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <Image
@@ -24,22 +24,7 @@ const WhyChooseUs = () => {
               className="object-cover"
               priority
             />
-            
-            {/* Play Button Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-300">
-              <button
-                className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group"
-                aria-label="Play video"
-              >
-                <svg
-                  className="w-10 h-10 md:w-12 md:h-12 text-gray-900 ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
-            </div>
+                      
           </div>
 
           {/* Right side - Content */}
@@ -65,8 +50,8 @@ const WhyChooseUs = () => {
                 {features
                   .filter((f) => f.column === 1)
                   .map((feature, index) => (
-                    <div key={`col1-${index}`} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#757575] flex items-center justify-center">
+                    <div key={`col1-${index}`} className="flex items-center justify-center gap-3">
+                      {/* <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#757575] flex items-center justify-center">
                         <svg
                           className="w-3 h-3 text-white"
                           fill="none"
@@ -80,7 +65,7 @@ const WhyChooseUs = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                      </div>
+                      </div> */}
                       <span className="text-gray-700">{feature.text}</span>
                     </div>
                   ))}
@@ -91,8 +76,8 @@ const WhyChooseUs = () => {
                 {features
                   .filter((f) => f.column === 2)
                   .map((feature, index) => (
-                    <div key={`col2-${index}`} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#757575] flex items-center justify-center">
+                    <div key={`col2-${index}`} className="flex items-center justify-center gap-3">
+                      {/* <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#757575] flex items-center justify-center">
                         <svg
                           className="w-3 h-3 text-white"
                           fill="none"
@@ -106,7 +91,7 @@ const WhyChooseUs = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                      </div>
+                      </div> */}
                       <span className="text-gray-700">{feature.text}</span>
                     </div>
                   ))}

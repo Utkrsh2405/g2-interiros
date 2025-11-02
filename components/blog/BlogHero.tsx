@@ -3,24 +3,22 @@ import React from 'react';
 const BlogHero = () => {
   return (
     <section
-      className="relative h-screen w-full bg-contain bg-top flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/blog-1.jpg')" }}
+      className="relative h-screen w-full bg-cover bg-center flex items-center justify-center"
+      style={{ backgroundImage: "url('/images/blog.jpg')" }}
     >
-            <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="flex items-center justify-center z-10 container  px-4">
         <div className="max-w-3xl">
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">
+          <h1 className="text-4xl md:text-5xl text-center lg:text-6xl font-serif text-white mb-6">
             Our Blogs
           </h1>
-          
+
           {/* Description */}
           <p className="text-gray-300 text-lg leading-relaxed">
-            Discover design inspiration, expert tips, and the latest trends in
-            interior design. Our blog features insights to help you create
-            beautiful spaces.
+            Get the latest updates and deeper insights for interior design from us
           </p>
         </div>
       </div>

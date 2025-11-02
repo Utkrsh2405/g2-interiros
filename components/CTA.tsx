@@ -1,42 +1,37 @@
 import React from 'react';
-import Link from 'next/link';
 
 const CTA = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
+    <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/images/cta.jpg" 
+          alt="Cozy living room interior" 
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative h-full flex items-center justify-center px-6">
+        <div className="text-center max-w-3xl">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-6">
+          <h2 className="text-white mb-4 text-4xl font-semibold">
             Let's create something beautiful together
           </h2>
 
           {/* Description */}
-          <p className="text-gray-600 leading-relaxed mb-8 max-w-xl mx-auto">
-            Ready to transform your space? Get in touch with our team to start
-            your design journey.
+          <p className="text-white/90 mb-8 max-w-xl mx-auto">
+            Ready to transform your space? Get in touch with our team to start your design journey
           </p>
 
           {/* CTA Button */}
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 hover:bg-gray-800 transition-colors duration-300 group"
-          >
+          <button className="inline-flex items-center gap-2 bg-[#6d8e4c] text-white px-6 py-3 rounded-md hover:bg-[#5d7a3f] transition-colors duration-300 group">
             Book a consultation
-            <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </Link>
+             <img src="/images/arrow.svg" alt="" />
+          </button>
         </div>
       </div>
     </section>

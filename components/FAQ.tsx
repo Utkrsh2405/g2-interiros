@@ -44,12 +44,12 @@ const FAQ = () => {
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-60">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left side - Heading */}
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-4">
-              Answers To Your Frequently{' '}
+            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
+             <p> Answers To Your Frequently</p>
               <em className="font-serif not-italic">Asked Questions</em>
             </h2>
           </div>
@@ -64,7 +64,10 @@ const FAQ = () => {
             </p>
 
             {/* FAQ Accordion */}
-            <div className="space-y-4">
+            
+          </div>
+        </div>
+        <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <div
                   key={index}
@@ -115,8 +118,6 @@ const FAQ = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
       </div>
     </section>
   );

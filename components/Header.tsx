@@ -11,7 +11,7 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
-    // { name: 'Projects', path: '/projects' },
+    { name: 'Projects', path: '/projects' },
     { name: 'Blogs', path: '/blog' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
@@ -20,12 +20,12 @@ const Header = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-[#FFF9EE] shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-evenly h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/images/G2logo.png" alt="Logo" width="60" height="52" />
+            <img src="/images/logo.svg" alt="Logo" width="100" height="100" />
           </Link>
 
           <div className='hidden md:flex items-center justify-center gap-12'>
@@ -34,8 +34,8 @@ const Header = () => {
                 key={link.path}
                 href={link.path}
                 className={`text-sm font-medium transition-colors duration-200 ${isActive(link.path)
-                    ? 'text-gray-900 border-b-2 border-gray-900 '
-                    : 'text-gray-600 hover:text-gray-900'
+                    ? 'text-[#6D8E4C] border-b border-[#6D8E4C] '
+                    : 'text-[#606060] hover:text-gray-900'
                   }`}
               >
                 {link.name}
@@ -48,9 +48,10 @@ const Header = () => {
 
             <Link
               href="/contact"
-              className="bg-gray-900 text-white px-6 py-2 hover:bg-gray-800 transition-colors duration-300"
+              className="bg-[#6D8E4C] flex items-center gap-2.5 text-white px-6 py-2 rounded-md hover:bg-[#6D8E4C] transition-colors duration-300"
             >
-              Get Started
+              Contact us
+              <img src="/images/arrow.svg" alt="" />
             </Link>
           </div>
 

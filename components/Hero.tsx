@@ -10,7 +10,7 @@ export default function Hero() {
       {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto font-famliy-[Archivo]">
         <h1 className="text-white mb-6 font-serif">
           <span className="block text-5xl md:text-6xl lg:text-7xl font-light mb-2">
             Transform Spaces
@@ -26,7 +26,7 @@ export default function Hero() {
           style, and your unique personality.
         </p>
 
-        <button className="bg-white text-gray-900 px-8 py-3  text-sm font-medium hover:bg-gray-100 transition-colors duration-300 uppercase tracking-wide">
+        <button className="bg-[#6D8E4C] rounded-md text-white px-8 py-3 text-sm font-medium transition-colors duration-300 tracking-wide">
           Book a Consultation
         </button>
       </div>

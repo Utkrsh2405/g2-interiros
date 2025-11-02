@@ -39,7 +39,7 @@ const WhoWeAre = () => {
             
             {/* Top left heading */}
             <div className="absolute top-8 left-8">
-              <h2 className="text-white text-3xl md:text-4xl font-serif">
+              <h2 className="text-white text-3xl md:text-4xl font-Archivo">
                 Who We Are?
               </h2>
             </div>
@@ -53,7 +53,7 @@ const WhoWeAre = () => {
           </div>
 
           {/* Right side - Stats Grid */}
-          <div className="absolute -left-32 lg:relative mt-12 lg:mt-0 bg-[#F8F8F8] p-8 md:p-12 shadow-lg">
+          <div className="absolute -left-24 lg:relative mt-12 lg:mt-0 bg-[#FFF9EE] p-8 md:p-12 shadow-lg">
             {/* Top description */}
             <div className="mb-8">
               <p className="text-gray-600 leading-relaxed">

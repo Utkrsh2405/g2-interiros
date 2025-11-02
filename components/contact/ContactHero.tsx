@@ -17,11 +17,10 @@ const ContactHero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-4">
-          Contact
+          Contact Us
         </h1>
         <p className="text-white/90 text-lg max-w-xl mx-auto">
-          Have a project in mind or looking to transform your space? Get in touch
-          with us today.
+         Get in touch with us today and transform your spaces with us
         </p>
       </div>
     </section>

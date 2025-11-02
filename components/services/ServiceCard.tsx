@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   imagePosition,
 }) => {
   return (
-    <section className="py-16 md:py-24 bg-white border-b border-gray-100 last:border-b-0">
+    <section className="py-16 md:px-24 bg-white last:border-b-0">
       <div className="container mx-auto px-4">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
           imagePosition === 'right' ? 'lg:grid-flow-dense' : ''
@@ -44,7 +44,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               {title}
             </h2>
             
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-[#11111180] leading-relaxed">
               {description}
             </p>
 
@@ -53,7 +53,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0"
+                    className="w-5 h-5 text-[#11111180] mt-1 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -63,29 +63,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-700">{feature}</span>
+                  <span className="text-[#11111180]">{feature}</span>
                 </li>
               ))}
             </ul>
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3 hover:bg-gray-800 transition-colors duration-300 group"
+              className="inline-flex items-center gap-2 bg-[#6D8E4C] rounded-md text-white px-8 py-3 transition-colors duration-300 group"
             >
               Learn More
-              <svg
-                className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+               <img src="/images/arrow.svg" alt="" />
             </Link>
           </div>
         </div>

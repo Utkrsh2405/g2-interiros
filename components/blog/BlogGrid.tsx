@@ -99,7 +99,7 @@ const BlogGrid = () => {
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-24">
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
@@ -108,7 +108,7 @@ const BlogGrid = () => {
               className="bg-white overflow-hidden rounded-md hover:shadow-lg transition-shadow duration-300 group border border-[#E8E8EA]"
             >
               {/* Image */}
-              <Link href={`/blog/${post.id}`} className="block relative h-[250px] overflow-hidden">
+              <Link href={`/blog-details`} className="block relative h-[250px] overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -121,37 +121,36 @@ const BlogGrid = () => {
               <div className="p-6">
                 {/* Category */}
                 <div className="mb-3">
-                  <span className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-3 py-1">
+                  <span className="inline-block bg-[#4B6BFB0D] text-[#4B6BFB] text-xs font-medium px-3 py-1">
                     {post.category}
                   </span>
                 </div>
 
                 {/* Title */}
-                <Link href={`/blog/${post.id}`}>
+                <Link href={`/blog-details`}>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-gray-700 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
                 </Link>
 
                 {/* Excerpt */}
-                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                {/* <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                   {post.excerpt}
-                </p>
+                </p> */}
 
                 {/* Meta Info */}
                 <div className="flex items-center gap-4 text-sm text-gray-500">
+                  <div className="flex items-center gap-2">
+                    <img src="/images/blog-profile.jpg" alt="Porfile" width="24" className='rounded-full' />
+                    <span>{post.author}</span>
+                  </div>
                   <div className="flex items-center gap-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     <span>{post.date}</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    <span>{post.author}</span>
-                  </div>
+
                 </div>
               </div>
             </article>

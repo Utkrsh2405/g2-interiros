@@ -3,15 +3,14 @@ import Image from 'next/image';
 
 const AboutWhyChoose = () => {
   const features = [
-    'Expert Team',
-    'Quality Materials',
-    'Personalized Service',
-    'On-Time Delivery',
+    {name:'Expert Team', image:'/images/expert-team.svg', description:'Our creative team blends passion and precision to craft spaces that truly feel like home.'},
+    {name: 'Thoughtful Design', image:'/images/thought.svg', description:'From concept to completion, we turn ideas into elegant, functional spaces.'},
+    {name:'Driven by Passion', image:'/images/driven.svg', description:'We design with purpose — transforming spaces into meaningful experiences.'},
   ];
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Content */}
           <div className="space-y-6 order-2 lg:order-1">
@@ -19,31 +18,21 @@ const AboutWhyChoose = () => {
               Why Choose us?
             </h2>
             
-            <p className="text-gray-600 leading-relaxed">
-              With years of experience and a passion for design excellence, we
-              bring your vision to life with unmatched dedication and expertise.
+            <p className="text-[#11111180] leading-relaxed">
+              We don’t just decorate spaces; we design experiences — where textures, colors, and light come together to tell your story.
             </p>
 
             {/* Features List */}
-            <div className="space-y-4">
+            <div className="space-y-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center mt-1">
-                    <svg
-                      className="w-4 h-4 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2.5}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#111111] flex items-center justify-center mt-1">
+                     <img src={feature.image} alt={feature.name} />
                   </div>
-                  <p className="text-gray-700 text-lg">{feature}</p>
+                 <div>
+                   <p className="text-gray-700 text-lg">{feature.name}</p>
+                  <p className='text-[#11111180]'>{feature.description}</p>
+                 </div>
                 </div>
               ))}
             </div>

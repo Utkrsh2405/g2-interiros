@@ -37,38 +37,21 @@ const RecentWork = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="">
+      <div className="container mx-auto px-24">
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
-          <div className="max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
-              Our Recent Work
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Discover our featured works showcasing our expertise and passion
-              for creating spaces that inspire and align your new ventures.
-            </p>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+          <h2 className="text-gray-900 text-4xl font-semibold">
+            Our Recent Work
+          </h2>
+          <div className="flex flex-col items-start  gap-4">
+            <p className="text-gray-600 max-w-md text-left text-sm">
+              Discover our featured works showcasing our expertise and passion in every project. Let these stories inspire your next venture!            </p>
+            <button className="bg-[#6D8E4C] rounded-md text-white px-6 py-3 transition-colors duration-300 flex items-center gap-2 group hover:bg-[#5d7a3f]">
+             Learn More
+               <img src="/images/arrow.svg" alt="" />
+            </button>
           </div>
-          <Link
-            href="/portfolio"
-            className="bg-gray-900 text-white px-6 py-3 hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2 group whitespace-nowrap"
-          >
-            Learn More
-            <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </Link>
         </div>
 
         {/* Portfolio Grid */}
@@ -83,7 +66,7 @@ const RecentWork = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-          
+
           <div className="relative h-[280px] sm:h-[320px] sm:col-span-1 lg:col-span-2 overflow-hidden group cursor-pointer">
             <Image
               src={projects[1].image}
@@ -104,7 +87,7 @@ const RecentWork = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-          
+
           <div className="relative h-[280px] sm:h-[320px] overflow-hidden group cursor-pointer">
             <Image
               src={projects[3].image}
@@ -114,7 +97,7 @@ const RecentWork = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-          
+
           <div className="relative h-[280px] sm:h-[320px] overflow-hidden group cursor-pointer">
             <Image
               src={projects[4].image}
